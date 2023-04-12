@@ -34,6 +34,12 @@ Consider the following rotations of vectors:
 
 ![image](https://user-images.githubusercontent.com/110079800/231575629-47e88745-376c-454f-8ac3-efa18083193e.png)
 ![image](https://user-images.githubusercontent.com/110079800/231576171-b66d6ffc-cad1-4013-a799-abc1132a1794.png)
+•	Start at (1, 0)
+•	Rotate by θ
+•	We get (cosθ, sinθ)	•	Start at (1, y)
+•	Rotate until y = 0
+•	The rotation is tan−1y
+
 
 
 
