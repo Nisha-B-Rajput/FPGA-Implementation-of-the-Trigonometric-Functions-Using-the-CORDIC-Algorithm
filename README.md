@@ -4,7 +4,7 @@ Abstract—The paper presents the design principle and FPGA implementation of va
 
 Keywords— CORDIC, Trigonometric function, Exponential, ArcTangent, Logarithm, and Polar to Rectangular conversion.
 
-INTRODUCTION 
+## INTRODUCTION 
 
 In 1959, Jack E. Volder introduced the Co-ordinate Rotation Digital Computer algorithm abbreviated as CORDIC. The CORDIC uses the basic shift and add operations with the help of lookup table for computing the complex trigonometric and arithmetic functions. CORDIC operates in either vector mode or rotation mode was used calculating the sine, cosine, magnitude, phase, hyperbolic functions, exponential, logarithmic, polar to rectangular conversion etc.
 
@@ -13,7 +13,7 @@ ROTATION MODE: In the rotation mode, the old coordinate points are shifted to th
 VECTOR MODE: In the vectoring mode, the magnitude and the angular argument of the original vector are computed based on the coordinate components of the input vector.
 
 
-APPLICATIONS OF CORDIC ALGORITHM
+## APPLICATIONS OF CORDIC ALGORITHM
 
 The algorithm finds its applications in various fields such as 
 1. Numerical Processors
@@ -24,11 +24,11 @@ The algorithm finds its applications in various fields such as
 6. Software Defined Radio
 7. Image and Video Processing Algorithms
 
-EARLIER TECHNIQUES
+## EARLIER TECHNIQUES
 
 For implementing the trigonometric functions, polynomial approximation and lookup table methods were employed earlier. The lookup table method stores the values for every angle and the output latency is very low nearly one clock cycle. The major disadvantage of this method is the requirement of huge memory. The method has a trade-off between the accuracy and memory requirement. The polynomial approximation method has high accuracy, but it requires huge hardware. The CORDIC method overcomes the memory requirement problem at the expense of the output latency. The accuracy of the method can be improved by improving the output latency.
 
-CONCEPT OF CORDIC ALGORITHM
+## CONCEPT OF CORDIC ALGORITHM
 
 Consider the following rotations of vectors:
 
@@ -74,36 +74,36 @@ In the sequential CORDIC architecture, the Read Only Memory (ROM) stores the val
 
 ![image](https://user-images.githubusercontent.com/110079800/231580065-044e4d9b-edc9-4944-9b71-0de4843d898e.png)
 
-PARALLEL CORDIC ARCHITECTURE
+## PARALLEL CORDIC ARCHITECTURE
 
 The parallel CORDIC architecture is obtained by duplicating the sequential CORDIC architecture n number of times. The value of n is decided by the number of iterations. As the number of iterations increases, the accuracy increases at the cost of the increased area. The parallel CORDIC architecture consumes more hardware at the expense of the low processing time.
 
 ![image](https://user-images.githubusercontent.com/110079800/231580259-d5c9763d-3edc-4a13-a1ea-14eaf7ce92b9.png)
 
-THE UNIVERSAL CORDIC
+## THE UNIVERSAL CORDIC
 
 ![image](https://user-images.githubusercontent.com/110079800/231580702-c75331f3-d6a4-42f9-b280-e862455f0d8b.png)
 
-SUMMARY OF UNIVERSAL CORDIC IMPLEMENTATION
+## SUMMARY OF UNIVERSAL CORDIC IMPLEMENTATION
 
 ![image](https://user-images.githubusercontent.com/110079800/231580796-76fbf2a9-a9a1-4ff4-971f-92dfbc990342.png)
 
-DIRECTLY COMPUTABLE FUNCTIONS
+## DIRECTLY COMPUTABLE FUNCTIONS
 
 ![image](https://user-images.githubusercontent.com/110079800/231580951-537273ee-8aed-421a-85af-a20d4a1d63d8.png)
 
-INDIRECTLY COMPUTABLE FUNCTIONS
+## INDIRECTLY COMPUTABLE FUNCTIONS
 In addition to the above functions, a number of other functions can be produced by combining the results of previous computations:
 
 ![image](https://user-images.githubusercontent.com/110079800/231581213-31124b7f-3427-4959-936c-1095f91e639d.png)
 
-FPGA IMPLEMENTATION OF TRIGONOMETRIC FUNCTIONS
+## FPGA IMPLEMENTATION OF TRIGONOMETRIC FUNCTIONS
 
-IMPLEMENTATION OF Sine and Cosine FUNCTIONS
+## IMPLEMENTATION OF Sine and Cosine FUNCTIONS
 
 The sine and cosine functions are obtained using the rotational mode CORDIC. The input angle is fed into the angle accumulator. The X and Y values are initialized with 1 and 0 respectively. The CORDIC algorithm presents the scaled version of sine and cosine in the X and Y after the desired latency. If the value of X is initialized with 1/K, then the result will be the unscaled sine and cosine outputs. The CORDIC algorithm uses the multiplication as a part of the rotation operation. Hence the design will be multiplier less implementation. The design works for all positive and negative angles.
 
-References:
+## References:
 
 1. https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8728315
 2. https://en.wikibooks.org/wiki/Digital_Circuits/CORDIC
