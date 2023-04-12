@@ -103,6 +103,10 @@ In addition to the above functions, a number of other functions can be produced 
 
 The sine and cosine functions are obtained using the rotational mode CORDIC. The input angle is fed into the angle accumulator. The X and Y values are initialized with 1 and 0 respectively. The CORDIC algorithm presents the scaled version of sine and cosine in the X and Y after the desired latency. If the value of X is initialized with 1/K, then the result will be the unscaled sine and cosine outputs. The CORDIC algorithm uses the multiplication as a part of the rotation operation. Hence the design will be multiplier less implementation. The design works for all positive and negative angles.
 
+## IMPLEMENTATION OF Arc Tan FUNCTION
+
+Vectoring mode in CORDIC is used for implementing the rectangular to polar conversion.
+
 ## References:
 
 1. https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8728315
