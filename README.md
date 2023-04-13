@@ -109,6 +109,10 @@ Vectoring mode in CORDIC is used for implementing the rectangular to polar conve
 
 ## APPLICATION OF CORDIC ALGORITHM - FFT
 
+The results are compared in terms of area, delay, static and dynamic power consumption for the parallel architectureas of sine, cosine and arc tan shown in Table below. The serial design of implementing the function consumes less area in terms of lookup tables at the expense of large delay. The static power for both the designs is almost same. Whereas the dynamic power for parallel design is more due to the presence of more number of components. The dynamic power depends on the input patterns presented to the designs. The values presented in the design are averaged values over repetitive iterations.
+VI. CONCLUSIONS
+The paper focuses on implementing the serial and parallel architectures of various trigonometric functions on the Cyclone IV E FPGA. The functions are compared based on the metric area, delay and power consumption. The serial architecture consumes less area while the parallel architecture consumes the more area. The parallel architecture is faster compared to the serial design. The reduction in latency at the expense of accuracy is useful for many real time applications.
+
 
 ## References:
 
