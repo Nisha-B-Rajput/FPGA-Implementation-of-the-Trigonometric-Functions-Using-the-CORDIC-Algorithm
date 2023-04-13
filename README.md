@@ -117,6 +117,15 @@ The results are compared in terms of area, delay, static and dynamic power consu
 
 The paper focuses on implementing the serial and parallel architectures of various trigonometric functions on the Cyclone IV E FPGA. The functions are compared based on the metric area, delay and power consumption. The serial architecture consumes less area while the parallel architecture consumes the more area. The parallel architecture is faster compared to the serial design. The reduction in latency at the expense of accuracy is useful for many real time applications.
 
+## Contributors
+* Priyanshu
+* Suyash Misra
+* Debangana Mukherjee
+* Nisha B Rajput
+
+## Acknowledgements
+
+* Dr Madhav Rao
 
 ## References:
 
@@ -128,15 +137,6 @@ The paper focuses on implementing the serial and parallel architectures of vario
 6. J. E. Volder, “The CORDIC trigonometric computing technique,” IRE Transactions on Electronic Computers, vol. EC- 8, pp. 330–334, Sept. 1959
 7. P. K. Meher, J. Valls, T. B. Juang, K.Sridhan and K. Maharatna, “50 Years of CORDIC: Algorithms, Architectures, and Applications”, IEEE Transactions on Circuits and Systems, Vol. 56, No.9, pp.1893-1907, 2009
 
-## Contributors
-* Priyanshu
-* Suyash Misra
-* Debangana Mukherjee
-* Nisha B Rajput
-
-## Acknowledgements
-
-* Dr Madhav Rao
 
 
   
