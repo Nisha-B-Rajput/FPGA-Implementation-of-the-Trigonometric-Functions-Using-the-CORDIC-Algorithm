@@ -107,6 +107,9 @@ The sine and cosine functions are obtained using the rotational mode CORDIC. The
 
 Vectoring mode in CORDIC is used for implementing the rectangular to polar conversion.
 
+## APPLICATION OF CORDIC ALGORITHM - FFT
+
+
 ## References:
 
 1. https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8728315
