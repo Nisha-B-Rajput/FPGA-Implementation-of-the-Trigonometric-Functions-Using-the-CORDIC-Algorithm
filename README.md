@@ -109,8 +109,12 @@ Vectoring mode in CORDIC is used for implementing the rectangular to polar conve
 
 ## APPLICATION OF CORDIC ALGORITHM - FFT
 
-The results are compared in terms of area, delay, static and dynamic power consumption for the parallel architectureas of sine, cosine and arc tan shown in Table below. The serial design of implementing the function consumes less area in terms of lookup tables at the expense of large delay. The static power for both the designs is almost same. Whereas the dynamic power for parallel design is more due to the presence of more number of components. The dynamic power depends on the input patterns presented to the designs. The values presented in the design are averaged values over repetitive iterations.
-VI. CONCLUSIONS
+Cordic is used to generate the sine and cosine function values that are used in the computation of the butterfly diagram in various stages of the FFT.
+
+The results are compared in terms of area, delay, static and dynamic power consumption for the parallel architectureas of sine, cosine and arc tan. The serial design of implementing the function consumes less area in terms of lookup tables at the expense of large delay. The static power for both the designs is almost same. Whereas the dynamic power for parallel design is more due to the presence of more number of components. The dynamic power depends on the input patterns presented to the designs. The values presented in the design are averaged values over repetitive iterations.
+
+## CONCLUSIONS
+
 The paper focuses on implementing the serial and parallel architectures of various trigonometric functions on the Cyclone IV E FPGA. The functions are compared based on the metric area, delay and power consumption. The serial architecture consumes less area while the parallel architecture consumes the more area. The parallel architecture is faster compared to the serial design. The reduction in latency at the expense of accuracy is useful for many real time applications.
 
 
@@ -118,6 +122,12 @@ The paper focuses on implementing the serial and parallel architectures of vario
 
 1. https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8728315
 2. https://en.wikibooks.org/wiki/Digital_Circuits/CORDIC
+3. unwei Li, Jiandong Fang, Bajin Li, Yudong Zhao, “Study of CORDIC Algorithm based on FPGA”, 28th Chinese Control and Decision Conference (CCDC), IEEE, 2016.
+4. Supriya Aggarwa, Pramod K. Meher, and Kavita Khare, “Concept, Design, and Implementation of Reconfigurable CORDIC”, IEEE TRANSACTIONS ON VERY LARGE SCALE INTEGRATION (VLSI) SYSTEMS, VOL. 24, NO. 4, APRIL 2016
+5. amanpreet Kaur, Parminder Singh Jassal, “ FPGA Implementation of CORDIC Algorithm Architecture”, International Journal of Engineering Inventions, Volume 2,Issue 10 (June 2013) pp:39-44
+6. J. E. Volder, “The CORDIC trigonometric computing technique,” IRE Transactions on Electronic Computers, vol. EC- 8, pp. 330–334, Sept. 1959
+7. P. K. Meher, J. Valls, T. B. Juang, K.Sridhan and K. Maharatna, “50 Years of CORDIC: Algorithms, Architectures, and Applications”, IEEE Transactions on Circuits and Systems, Vol. 56, No.9, pp.1893-1907, 2009
+
 
   
 
